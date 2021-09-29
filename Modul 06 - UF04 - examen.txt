@@ -1,0 +1,55 @@
+Ex1:
+import pickle
+
+f = open('data.pckl','rb')
+
+nota = pickle.load(f)
+
+for a in nota:
+    id = a['id']
+    mp1 = a['mp01']
+    mp2 = a['mp02']
+    mp3 = a['mp03']
+    mp4 = a['mp04']
+
+    mp0 = (mp1+mp2+mp3+mp4)/4
+
+    print (f"{id} {mp0}")
+
+f.close
+
+--------------------------------------------------------------
+Ex2:
+
+--------------------------------------------------------------
+Ex3:
+import pickle
+
+f = open('data1.pckl','rb')
+
+nota = pickle.load(f)
+
+for a in nota:
+    id = a['id']
+    mp1 = a['mp01']
+    mp2 = a['mp02']
+    mp3 = a['mp03']
+    mp4 = a['mp04']
+
+    mp0 = (mp1+mp2+mp3+mp4)/4
+
+    ll_m = []
+
+    up = ll_m.append(mp0)
+
+    f2 = open('mitjana.pckl','wb')
+
+    pickle.dump(up,f2)
+
+f.close
+
+--------------------------------------------------------------
+Ex4:
+
+--------------------------------------------------------------
+
